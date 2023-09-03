@@ -83,7 +83,7 @@ I used the following skills to manipulate the data and create the dashboard in P
 - Power Query
 - Data manipulation
 
-Below you will find some pictures of the final dashboard, but if you want to access the live dashboard, please click on the following link: https://app.powerbi.com/view?r=eyJrIjoiNGE2OTNhYjQtY2IwYy00NGZlLWE4ODAtNThjYTNhYjM0M2YzIiwidCI6ImNmYjlhNzBkLTMyY2UtNDM1NS05ZGRmLWMwOTFlOTZiZGIxYyJ9
+Below you will find some pictures of the final dashboard, but **if you want to access the live dashboard, please click on the following link:** https://app.powerbi.com/view?r=eyJrIjoiNGE2OTNhYjQtY2IwYy00NGZlLWE4ODAtNThjYTNhYjM0M2YzIiwidCI6ImNmYjlhNzBkLTMyY2UtNDM1NS05ZGRmLWMwOTFlOTZiZGIxYyJ9
 <br/>
 
 ![alt text](https://github.com/fpfernandes/RFM_SalesAnalysis/blob/650067b7eb2a12e4c8f8aa5d2171512071e092d8/dash1.PNG)
