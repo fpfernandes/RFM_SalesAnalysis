@@ -15,14 +15,16 @@
 - Recency = last order date
 - Frequency = Count of total orders
 - Monetary value = Total spent
-- 
+  
 <br/>It was created a three separate dimensions (R, F, M) using the scale from 1 to 4 and then a single RFM score by concatenating the three scores (e.g., RFM = 321, where 3 represents high recency, 2 represents medium frequency, and 1 represents low monetary value).<br/>
 <br/>The segment was defined was follows:<br/>
 - High-Value Customers: High R, High F, High M
 - New Customers: High R, Low F, Low M
 - Loyal Customers: High F, High M
 - Churning Customers: Low R, Low F, Low M
+  
 <br/>Below is my code in SQL to define RFM segments:<br/>
+
 ```sql
 with RFM as
 (
@@ -69,7 +71,7 @@ select
 from #RFM
 ```
 <br/>
-I used the following skills to manipulate the data and create the dashboard in Power BI:
+<br/>I used the following skills to manipulate the data and create the dashboard in Power BI:<br/>
 - Slicers
 - DAX functions
 - Charting
@@ -77,6 +79,6 @@ I used the following skills to manipulate the data and create the dashboard in P
 - Power Query
 - Data manipulation
 <br/>
-Below you can find a picture of the final dashboard, but if you want to access the live dashboard, please click on the following link:
+<br/>Below you can find a picture of the final dashboard, but if you want to access the live dashboard, please click on the following link:<br/>
 
 <iframe title="RFM_Dash" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNGE2OTNhYjQtY2IwYy00NGZlLWE4ODAtNThjYTNhYjM0M2YzIiwidCI6ImNmYjlhNzBkLTMyY2UtNDM1NS05ZGRmLWMwOTFlOTZiZGIxYyJ9" frameborder="0" allowFullScreen="true"></iframe>
