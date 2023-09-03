@@ -8,7 +8,7 @@ Dashboard designed to provide a comprehensive overview of sales and customer dat
 - Customizable Reports.<br/>
 
 **RFM Analysis in SQL**<br/>
- It is an indexing technique that uses past purchase behaviour to segment customers. An RFM report is a way of segmenting customers using three key metrics:
+ It is an indexing technique that uses past purchase behaviour to segment customers. An RFM report is a way of segmenting customers using three key metrics:<br/>
 - Recency: How long ago their last purchase was?
 - Frequency: How often they purchase?
 - Monetary value: How much they spent?<br/>
@@ -73,8 +73,9 @@ select
 	end as RFM_segment
 from #RFM
 ```
-<br/>
-**I used the following skills to manipulate the data and create the dashboard in Power BI:**<br/>
+
+I used the following skills to manipulate the data and create the dashboard in Power BI:<br/>
+
 - Slicers
 - DAX functions
 - Charting
@@ -82,10 +83,9 @@ from #RFM
 - Power Query
 - Data manipulation
 
-Below you can find a picture of the final dashboard, but if you want to access the live dashboard, please click on the following link: https://app.powerbi.com/view?r=eyJrIjoiNGE2OTNhYjQtY2IwYy00NGZlLWE4ODAtNThjYTNhYjM0M2YzIiwidCI6ImNmYjlhNzBkLTMyY2UtNDM1NS05ZGRmLWMwOTFlOTZiZGIxYyJ9
+Below you will find some pictures of the final dashboard, but if you want to access the live dashboard, please click on the following link: https://app.powerbi.com/view?r=eyJrIjoiNGE2OTNhYjQtY2IwYy00NGZlLWE4ODAtNThjYTNhYjM0M2YzIiwidCI6ImNmYjlhNzBkLTMyY2UtNDM1NS05ZGRmLWMwOTFlOTZiZGIxYyJ9
 <br/>
 
 ![alt text](https://github.com/fpfernandes/RFM_SalesAnalysis/blob/650067b7eb2a12e4c8f8aa5d2171512071e092d8/dash1.PNG)
 ![alt text](https://github.com/fpfernandes/RFM_SalesAnalysis/blob/650067b7eb2a12e4c8f8aa5d2171512071e092d8/dash2.PNG)
 
-<iframe title="RFM_Dash" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNGE2OTNhYjQtY2IwYy00NGZlLWE4ODAtNThjYTNhYjM0M2YzIiwidCI6ImNmYjlhNzBkLTMyY2UtNDM1NS05ZGRmLWMwOTFlOTZiZGIxYyJ9" frameborder="0" allowFullScreen="true"></iframe>
