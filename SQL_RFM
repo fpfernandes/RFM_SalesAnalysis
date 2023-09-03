@@ -1,0 +1,45 @@
+```sql
+with RFM as
+(
+select
+	CUSTOMERNAME,
+	sum(SALES) as monetary_value,
+	avg(SALES) as avg_monetary_value,
+	count(distinct ORDERNUMBER) as frequency,
+	max(ORDERDATE) as last_order_date,
+	(
+		select max(ORDERDATE)
+		from [Projects].[dbo].[sales_data_samp]
+	) as max_order_date,
+	DATEDIFF(DD, max(ORDERDATE), (select max(ORDERDATE) from [Projects].[dbo].[sales_data_samp])) as recency
+from [Projects].[dbo].[sales_data_samp]
+group by CUSTOMERNAME
+),
+calc_rfm as
+(
+	select R.*,
+		NTILE(4) OVER (order by recency desc) as rfm_recency,
+		NTILE(4) OVER (order by frequency) as rfm_frequency,
+		NTILE(4) OVER (order by monetary_value) as rfm_monetary
+	from RFM as R
+)
+select C.*,
+	rfm_recency + rfm_frequency + rfm_monetary as RFM_cell,
+	cast(rfm_recency as varchar) + cast(rfm_frequency as varchar) + cast(rfm_monetary as varchar) as RFM_column
+into #RFM
+from calc_rfm as C
+
+select 
+	CUSTOMERNAME,
+	rfm_recency , 
+	rfm_frequency,
+	rfm_monetary,
+	RFM_column,
+	case
+		when RFM_column in (111, 112, 121, 122, 123, 132, 211, 212, 221, 222) then 'Churning Customers'
+		when RFM_column in (133, 144, 223, 232, 233, 234, 244) then 'Loyal Customers'
+		when RFM_column in (311, 322, 332, 412, 421, 422) then 'New Customers'
+		when RFM_column in (333, 343, 344, 423, 433, 434, 443, 444) then 'High-Value Customers'
+	end as RFM_segment
+from #RFM
+```
