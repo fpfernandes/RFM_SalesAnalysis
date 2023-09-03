@@ -1,5 +1,6 @@
 # SQL | POWER BI
 Dashboard designed to provide a comprehensive overview of sales and customer data from a scale model vehicle factory using SQL to conduct RFM Analysis for customer segmentation and Power BI to craft an interactive and informative dashboard.<br/>
+
 **Key Features:**<br/>
 - Sales Revenue Analysis.
 - Customer Data Segmentation using RFM (Recency, Frequency, Monetary) analysis.
