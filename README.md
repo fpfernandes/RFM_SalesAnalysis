@@ -1,28 +1,29 @@
 # SQL | POWER BI
 <br/>Dashboard designed to provide a comprehensive overview of sales and customer data from a scale model vehicle factory using SQL to conduct RFM Analysis for customer segmentation and Power BI to craft an interactive and informative dashboard.<br/>
 <br/>**Key Features:**
-•	Sales Revenue Analysis.
-•	Customer Data Segmentation using RFM (Recency, Frequency, Monetary) analysis.
-•	Insightful Visualizations.
-•	Customizable Reports.<br/>
+- Sales Revenue Analysis.
+- Customer Data Segmentation using RFM (Recency, Frequency, Monetary) analysis.
+- Insightful Visualizations.
+- Customizable Reports.<br/>
 
 <br/>**RFM Analysis in SQL**<br/>
  It is an indexing technique that uses past purchase behaviour to segment customers. An RFM report is a way of segmenting customers using three key metrics:
-•	Recency: How long ago their last purchase was?
-•	Frequency: How often they purchase?
-•	Monetary value: How much they spent?
+- Recency: How long ago their last purchase was?
+- Frequency: How often they purchase?
+- Monetary value: How much they spent?
 <br/>Data points used in RFM Analysis:<br/>
-•	Recency = last order date
-•	Frequency = Count of total orders
-•	Monetary value = Total spent 
+- Recency = last order date
+- Frequency = Count of total orders
+- Monetary value = Total spent
+- 
 <br/>It was created a three separate dimensions (R, F, M) using the scale from 1 to 4 and then a single RFM score by concatenating the three scores (e.g., RFM = 321, where 3 represents high recency, 2 represents medium frequency, and 1 represents low monetary value).<br/>
 <br/>The segment was defined was follows:<br/>
-High-Value Customers: High R, High F, High M
-New Customers: High R, Low F, Low M
-Loyal Customers: High F, High M
-Churning Customers: Low R, Low F, Low M
+- High-Value Customers: High R, High F, High M
+- New Customers: High R, Low F, Low M
+- Loyal Customers: High F, High M
+- Churning Customers: Low R, Low F, Low M
 <br/>Below is my code in SQL to define RFM segments:<br/>
-
+```sql
 with RFM as
 (
 select
@@ -66,6 +67,7 @@ select
 		when RFM_column in (333, 343, 344, 423, 433, 434, 443, 444) then 'High-Value Customers'
 	end as RFM_segment
 from #RFM
+```
 <br/>
 I used the following skills to manipulate the data and create the dashboard in Power BI:
 - Slicers
