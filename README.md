@@ -82,6 +82,10 @@ from #RFM
 - Power Query
 - Data manipulation
 
-Below you can find a picture of the final dashboard, but if you want to access the live dashboard, please click on the following link:<br/>
+Below you can find a picture of the final dashboard, but if you want to access the live dashboard, please click on the following link: https://app.powerbi.com/view?r=eyJrIjoiNGE2OTNhYjQtY2IwYy00NGZlLWE4ODAtNThjYTNhYjM0M2YzIiwidCI6ImNmYjlhNzBkLTMyY2UtNDM1NS05ZGRmLWMwOTFlOTZiZGIxYyJ9
+<br/>
+
+![alt text](https://github.com/fpfernandes/RFM_SalesAnalysis/blob/650067b7eb2a12e4c8f8aa5d2171512071e092d8/dash1.PNG)
+![alt text](https://github.com/fpfernandes/RFM_SalesAnalysis/blob/650067b7eb2a12e4c8f8aa5d2171512071e092d8/dash2.PNG)
 
 <iframe title="RFM_Dash" width="600" height="373.5" src="https://app.powerbi.com/view?r=eyJrIjoiNGE2OTNhYjQtY2IwYy00NGZlLWE4ODAtNThjYTNhYjM0M2YzIiwidCI6ImNmYjlhNzBkLTMyY2UtNDM1NS05ZGRmLWMwOTFlOTZiZGIxYyJ9" frameborder="0" allowFullScreen="true"></iframe>
