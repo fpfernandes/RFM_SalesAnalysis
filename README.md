@@ -73,7 +73,7 @@ select
 	end as RFM_segment
 from #RFM
 ```
-
+The dashboard is completely dynamic and adjusts depending on the year, month, territory, country and customer selected via the slicers.<br/>
 I used the following skills to manipulate the data and create the dashboard in Power BI:<br/>
 
 - Slicers
