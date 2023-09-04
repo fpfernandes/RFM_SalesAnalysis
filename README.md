@@ -34,7 +34,6 @@ with RFM as
 select
 	CUSTOMERNAME,
 	sum(SALES) as monetary_value,
-	avg(SALES) as avg_monetary_value,
 	count(distinct ORDERNUMBER) as frequency,
 	max(ORDERDATE) as last_order_date,
 	(
